@@ -1,6 +1,12 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
 
 
 def home(request):
-    return HttpResponse("Creando mi primer hola mundo en Django")
+    return render(request,'index.html')
+
+def receta(request):
+    return render(request,'receta.html')
+
+def contacto(request):
+    return render(request,'contacto.html')
